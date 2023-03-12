@@ -1,0 +1,13 @@
+export { default as BookDoctor } from "./BookDoctor/BookDoctor";
+export { default as CAT } from "./CAT/CAT";
+export { default as Features } from "./Features/Features";
+export { default as Footer } from "./Footer/Footer";
+export { default as LogIn } from "./LogIn/LogIn";
+export { default as Navbar } from "./Navbar/Navbar";
+export { default as Newsletter } from "./Newsletter/Newsletter";
+export { default as Services } from "./Services/Services";
+export { default as Sidebar } from "./Sidebar/Sidebar";
+export { default as SignUp } from "./SignUp/SignUp";
+export { default as VideoPlayer } from "./VideoPlayer/VideoPlayer";
+export { default as Notfication } from "./Notification/Notification";
+export { default as Options } from "./Options/Options";

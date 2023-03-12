@@ -1,0 +1,193 @@
+#contact {
+  height: 91vh;
+  min-width: 100vw;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  margin-top: 70px;
+  background-image: url("../../Assets/contact-us.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-inner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-block: 20px;
+  max-width: 720px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-heading {
+  font-family: "Quando", serif;
+  font-size: 32px;
+  margin-bottom: 10px;
+  line-height: 1.3em;
+  color: var(--lightest-navy);
+  font-weight: 700;
+}
+
+.contact-subheading {
+  font-size: 14px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  gap: 20px;
+  align-items: center;
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-sub-container-1 {
+  display: flex;
+  gap: 20px;
+}
+
+.form-input-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0;
+}
+
+.form-input-contact > input {
+  padding: 7px;
+  border-radius: 5px;
+  color: var(--grey-1);
+  border: 1px solid var(--grey-2);
+}
+
+.form-sub-container-2 {
+  width: 100%;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+
+.form-textarea {
+  width: 100%;
+}
+
+.form-input > label:hover,
+.form-textarea > label:hover {
+  opacity: 0.7;
+}
+
+.form-textarea > textarea {
+  padding: 5px;
+  height: 100px;
+  border-radius: 5px;
+  color: var(--grey-1);
+  border: 1px solid var(--grey-2);
+}
+
+.form-textarea > textarea:focus,
+.form-input > input:focus {
+  outline: 1px solid var(--blue-1);
+  box-shadow: 0 0 5px 5px var(--grey-2);
+}
+
+.form-button > button {
+  background-color: var(--lightest-navy);
+  color: var(--white);
+  font-size: 18px;
+  margin-top: 30px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 5px;
+}
+
+.info-box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.contact-email {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--blue-1);
+  cursor: pointer;
+}
+
+.contact-address {
+  color: var(--grey-1);
+  font-size: 14px;
+}
+.contact-icon {
+  display: flex;
+  font-size: 20px;
+  cursor: pointer;
+  gap: 10px;
+  justify-content: center;
+}
+
+.contact-icon > a {
+  color: var(--grey-1);
+}
+
+.contact-icon > a:hover {
+  transition: all 0.1 ease;
+  color: var(--blue-1);
+}
+
+@media (max-width: 700px) {
+  .contact-inner-container {
+    padding-inline: 10px;
+  }
+
+  .contact-subheading {
+    text-align: center;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  #contact {
+    height: fit-content;
+    padding-block: 20px;
+  }
+
+  .contact-inner-container {
+    width: 90%;
+  }
+
+  .form-sub-container-1, .form-sub-container-2 {
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+  }
+
+  .form-input-contact {
+    width: 100%;
+  }
+
+  .form-input-contact > input {
+    width: 100%;
+  }
+
+  .form-sub-container-2 > textarea {
+    width: 100%;
+  }
+
+  .form-sub-container-2 > label {
+    margin-right: auto;
+  }
+}

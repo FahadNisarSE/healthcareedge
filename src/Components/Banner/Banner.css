@@ -1,0 +1,18 @@
+.Banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 70px;
+    text-transform: capitalize;
+    padding: 15px 25px;
+}
+
+#removeTopBorder {
+    margin-top: 0px;
+}
+
+.Banner-heading {
+    margin-top: 10px;
+    font-family: 'Quando', serif;
+    font-weight: 500;
+}

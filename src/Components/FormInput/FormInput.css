@@ -1,0 +1,36 @@
+.formInput-container {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.form-input {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    cursor: pointer;
+    outline: none;
+}
+
+input:invalid[focused = "true"] {
+    border: 1px solid var(--red);
+}
+
+input:invalid[focused="true"] ~ span{
+    display: block;
+}
+
+.form-input-label {
+    font-size: 14px;
+    color: var(--grey-1)
+}
+
+.error-message {
+    display: none;
+    line-height: 1.5em;
+    font-size: 12px;
+    color: var(--red);
+    bottom: -23px;
+}

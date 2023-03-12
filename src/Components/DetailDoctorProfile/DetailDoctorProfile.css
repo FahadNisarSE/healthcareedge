@@ -1,0 +1,179 @@
+.doctor-profile-box {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--grey-2);
+  background-color: var(--white);
+  font-size: 14px;
+  padding: 16px 10px;
+}
+
+.doctor--profile--image--container {
+  width: 200px;
+  height: auto;
+  overflow: hidden;
+}
+
+.doctor--profile--Image {
+  width: 100%;
+  height: auto;
+  border-radius: 7px;
+}
+
+.doctor--profile--info-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.doctor--profile--heading {
+  font-size: 22px;
+  font-family: "Quando", serif;
+}
+
+.doctor--profile--feild {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: var(--grey-1);
+}
+
+.tag--image--container {
+  display: flex;
+  gap: 10px;
+}
+
+.tag-Image {
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+}
+
+.profile--tag--container {
+  display: flex;
+  gap: 5px;
+}
+
+.profile--tag {
+  border: 1px solid var(--grey-2);
+  padding: 2px 4px;
+  color: var(--grey-1);
+  border-radius: 3px;
+}
+
+.doctor--profile--info-2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+.profile-icon {
+  font-size: 15px;
+}
+
+.doctor--profile--info-3 {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+
+.profile-icon-with-border {
+  border: 1px solid var(--grey-2);
+  color: var(--grey-1);
+  border-radius: 3px;
+  font-size: 30px;
+  padding: 5px;
+}
+
+.profile-icon-with-border:hover {
+  color: var(--green-3);
+  border-color: var(--green-3);
+}
+
+.doctor--profile--button {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 95%;
+}
+
+.doctor--profile--button > button {
+  width: 100%;
+  margin-inline: auto;
+  height: 40px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#view-profile-button {
+  width: 100%;
+  margin-inline: auto;
+  height: 40px;
+  border: none;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid var(--blue);
+  background-color: transparent;
+  color: var(--blue);
+  transition: 0.3s ease;
+}
+
+#view-profile-button:hover {
+  background: linear-gradient(
+    45deg,
+    rgba(16, 222, 253, 1) 0%,
+    rgba(71, 45, 253, 1) 72%
+  );
+  border: none;
+  color: var(--white);
+}
+
+@media (min-width: 760px) {
+  .doctor-profile-box {
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+    gap: 50px;
+    width: 100%;
+    margin-inline: 0px;
+    padding-block: 20px;
+  }
+
+  .doctor--profile--feild {
+    justify-content: flex-start;
+  }
+
+  .doctor--profile--button {
+    width: 200px;
+    margin-inline: 0px;
+  }
+
+  .doctor--profile--info-2 {
+    width: auto;
+  }
+
+  .doctor--profile--info-3 {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 950px) {
+    .doctor-profile-box {
+        flex-direction: row;
+        justify-content: center;
+        text-align: left;
+        gap: 50px;
+        width: fit-content;
+        padding-block: 20px;
+        padding-inline: 40px;
+      }
+    
+}

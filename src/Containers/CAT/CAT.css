@@ -1,0 +1,50 @@
+.call-to-action {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.call-to-action>div {
+    min-width: 330px;
+    max-width: 430px;
+    padding: 30px 20px;
+    border-radius: 10px;
+}
+
+.doctor-call-action {
+    background-color: var(--lightest-navy);
+    color: white;
+}
+
+.patient-call-action {
+    background-color: var(--grey);
+    color: white;
+}
+
+.cat-heading {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.cat-button-doctor {
+    color: var(--lightest-navy);
+    background-color: var(--white);
+}
+
+.cat-button-patient {
+    color: var(--grey);
+    background-color: var(--white);
+}
+
+.cat-button-doctor, .cat-button-patient {
+    font-weight: 700;
+    font-size: 18px;
+    border: none;
+    padding: 10px 40px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}

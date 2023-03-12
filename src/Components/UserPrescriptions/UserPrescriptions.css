@@ -1,0 +1,77 @@
+.profile-user-prescription {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border: 1px solid var(--grey-2);
+    border-radius: 8px;
+    background-color: var(--white);
+    overflow-x: scroll;
+}
+
+.profile-user-prescription-heading {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 16px;
+    justify-content: space-between;
+}
+
+.profile-user-prescription-value-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-user-prescription-value {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 16px;
+    justify-content: space-between;
+    padding-block: 10px;
+}
+
+#profile-user-prescription-doctor {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#profile-user-prescription-doctor>img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.profile-user-prescription-doctor-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.profile-user-prescription-doctor-info>h6 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.profile-user-prescription-doctor-info>p {
+    color: var(--grey-1);
+    font-size: 14px;
+}
+
+.view-prescription-button-container {
+    display: grid;
+    place-items: center;
+}
+
+.view-prescription-button {
+    display: flex;
+    padding: 10px 20px;
+    font-weight: 700;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    color: var(--white);
+    margin-right: auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background: var(--blue-2);
+}

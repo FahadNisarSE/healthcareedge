@@ -1,0 +1,127 @@
+.review-box {
+    display: flex;
+    gap: 15px;
+    padding: 16px;
+    border-radius: 5px;
+    margin: 20px;
+    background-color: var(--white);
+}
+
+.reviewer-image-box {
+    width: 150px;
+    margin-inline: 5px;
+}
+
+.reviewer-image {
+    width: 100%;
+    border-radius: 50%;
+    overflow: auto;
+    object-fit: contain;
+}
+
+.review-content {
+    padding: 10px;
+}
+
+.reviewer-content-1 {
+    display: flex;
+    justify-content: space-between;
+    color: var(--grey-1);
+}
+
+.reviewer-name {
+    font-size: 20px;
+    font-family: 'Quando', serif;
+    margin-bottom: 5px;
+}
+
+.review-date {
+    font-size: 14px;
+}
+
+.positive-recommendation {
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    display: flex;
+    align-items: center;
+    color: var(--green-4);
+    gap: 10px;
+    margin-block: 10px;
+}
+
+.negative-recommendation {
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    display: flex;
+    align-items: center;
+    color: var(--red);
+    gap: 10px;
+    margin-block: 10px;
+}
+
+.recomm {
+    font-size: 16px;
+}
+
+.review-body {
+    line-height: 20px;
+    color: var(--grey-1);
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.recommend-review-box {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+
+.Like-review,
+.Dislike-review {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: transparent;
+    color: var(--grey-1);
+    border: 1px solid var(--grey-1);
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 6px 10px;
+}
+
+.Like-review:hover,
+.Like-review:focus {
+    border-color: var(--green-4);
+    color: var(--green-4);
+}
+
+.Dislike-review:hover,
+.Dislike-review:focus {
+    border-color: var(--red);
+    color: var(--red);
+}
+
+@media (max-width: 770px) {
+    .review-box  {
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid var(--grey-2);
+    }
+
+    .reviewer-image-box {
+        width: 100px;
+        margin-inline: 5px;
+    }
+
+    .reviewer-content-1 {
+        flex-direction: column;
+    }
+
+    .review-date {
+        margin-bottom: 10px;
+    }
+
+    .reviewer-image {
+        margin-top: 20px;
+    }
+}

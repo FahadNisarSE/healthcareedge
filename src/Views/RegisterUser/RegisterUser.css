@@ -1,0 +1,54 @@
+#register {
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+}
+
+#register-choice {
+    display: flex;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: var(--grey-1);
+    cursor: pointer;
+}
+
+#login-choice {
+    display: grid;
+    place-items: center;
+    width: 90px;
+    height: 50px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+#signup-choice {
+    display: grid;
+    place-items: center;
+    width: 90px;
+    height: 50px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.main-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container {
+    width: 700px;
+}
+
+@media (max-width: 780px) {
+    .form-container {
+        width: auto;
+    }
+
+    .main-section {
+        margin: 40px 0;
+    }
+}

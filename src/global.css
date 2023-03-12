@@ -1,0 +1,252 @@
+html {
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  line-height: 24px;
+}
+
+* {
+  --green: #bbf7d0;
+  --green-1: #0de0fe;
+  --green-2: #09e5ab;
+  --green-3: #10defd;
+  --green-4: #09dca4;
+  --green-5: #28a745;
+  --red: #dc3545;
+  --red-1: #ef9a9a;
+  --red-1: rgba(242, 17, 54, 0.12);
+  --blue: rgb(147 197 253);
+  --blue-1: #004d7a;
+  --blue-2: #15558d;
+  --white: #ffffff;
+  --white-2: rgba(251, 251, 253, 0.5);
+  --black-1: rgb(56, 56, 61);
+  --navy: #0a192f;
+  --lightest-navy: rgba(6, 59, 111, 1);
+  --grey: rgba(62, 84, 99, 1);
+  --grey-1: #616161;
+  --grey-2: #d3d3d3;
+  --grey-3: #ffffff6b;
+  --yellow: #ffff00;
+  --yellow-1: #ffffe0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+main {
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
+  padding-inline: 16px;
+}
+
+.glass-bg {
+  background-color: rgb(62, 84, 99, 0.2);
+}
+
+.blue-gradient {
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+.main-gradient {
+  background: linear-gradient(
+    45deg,
+    rgba(16, 222, 253, 1) 0%,
+    rgba(71, 45, 253, 1) 72%
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+.main-bg {
+  background: linear-gradient(
+    45deg,
+    rgba(16, 222, 253, 1) 0%,
+    rgba(71, 45, 253, 1) 72%
+  );
+  color: var(--white);
+}
+
+.main-bg-mod {
+  background: linear-gradient(
+    15deg,
+    rgba(16, 222, 253, 1) 0%,
+    rgba(71, 45, 253, 1) 50%
+  );
+  color: var(--white);
+}
+
+.main-bg-inverse {
+  background: linear-gradient(
+    45deg,
+    rgba(71, 45, 253, 1) 0%,
+    rgba(16, 222, 253, 1) 72%
+  );
+  color: var(--white);
+}
+
+.blue-bg {
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
+  color: var(--white);
+}
+
+/* Slide Right Animation Started */
+
+.slide-right {
+  -webkit-animation: slide-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.box-shadow {
+  box-shadow: 2px 2px 25px rgba(0, 0, 0, 0.1);
+}
+
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+/* Slide Right Animation Ended */
+
+/* Move up Animation Started */
+
+.move-up {
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(200px);
+    transform: translateY(200px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+/* Move up Animation Ended */
+
+/* Slide Right Card Started */
+
+.slide-right-card {
+  -webkit-animation: slide-right-card 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: slide-right-card 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-right-card {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    opacity: 0.5;
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-right-card {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Slide Right Card Ended */
+
+@keyframes normal {
+  0% {
+  }
+
+  100% {
+  }
+}
+
+@media (max-width: 550px) {
+  .slide-right {
+    animation: normal;
+  }
+
+  .slide-right-card {
+    animation: normal;
+  }
+
+  .move-up {
+    animation: normal;
+  }
+
+  html {
+    font-size: 13px;
+  }
+}

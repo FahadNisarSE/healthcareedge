@@ -1,0 +1,52 @@
+.Book-Doctor-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    margin-top: 30px;
+    gap: 4rem;
+}
+
+.Doctor--desc--heading {
+    font-family: 'Quando', serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.3em;
+}
+
+.Book_Doctor_Image {
+    align-self: center;
+}
+
+#slide-container-outer-div {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    padding: none;
+}
+
+#slide-container {
+    display: flex;
+    overflow-x: scroll;
+    width: 100%;
+    gap: 16px;
+    padding: none;
+    margin: none;
+    position: relative;
+    transition: all 1s ease;
+}
+
+
+@media (max-width: 1400px) {
+    .Book-Doctor-container {
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 500px) {
+    .Book-Doctor-container {
+        padding-inline: 5px;
+        gap: 2rem;
+    }
+}

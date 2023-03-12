@@ -1,0 +1,94 @@
+.card {
+  max-width: 288px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid var(--grey-2);
+}
+
+.card-image {
+  position: relative;
+  width: 280px;
+  height: 190px;
+  padding-inline: 4px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--grey-2);
+}
+
+.card-title {
+  color: var(--lightest-navy);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5px;
+  padding-block: 20px;
+  gap: 5px;
+}
+
+.card-desc {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  margin-block: 3px;
+  gap: 8px;
+}
+
+.card-rate {
+  display: flex;
+  align-items: center;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.card-icon {
+  font-size: 16px;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 16px;
+}
+
+.book-now,
+.view-profile {
+  font-size: 14px;
+  font-weight: 600;
+  width: 140px;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  color: var(--lightest-navy);
+  width: 100%;
+}
+
+.book-now {
+  width: 100%;
+  background-color: var(--lightest-navy);
+  color: var(--white);
+  transition: all 0.3s ease;
+}
+
+.view-profile:hover,
+.view-profile:focus {
+  background-color: var(--lightest-navy);
+  color: var(--white);
+}

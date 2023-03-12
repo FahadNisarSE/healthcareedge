@@ -1,0 +1,148 @@
+.signup-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 700px;
+  height: 80vh;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.signup-heading {
+  font-size: 42px;
+  line-height: 1.5em;
+  font-weight: 600;
+  font-family: "Quando", sans;
+  margin-bottom: 16px;
+  text-transform: capitalize;
+}
+
+.signup-subContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.social-media-signup {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  padding-right: 20px;
+}
+
+.social-media-button {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 16px;
+  color: var(--grey-1);
+  border-radius: 5px;
+  background: var(--white);
+  border: none;
+  cursor: pointer;
+  width: 300px;
+  padding: 10px 20px;
+}
+
+.Facebook-button {
+  background-color: var(--blue-2);
+  color: var(--white);
+}
+
+.form-input-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1;
+  gap: 20px;
+  padding: 16px;
+  padding-left: 20px;
+}
+
+.simple-sign-up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  width: 300px;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
+.change-role {
+  font-size: 14px;
+  color: var(--grey-1);
+  font-weight: 600;
+}
+
+.change-role-link {
+  color: var(--blue-2);
+  cursor: pointer;
+}
+
+@media (max-width: 780px) {
+  .signup-container {
+    flex-direction: column;
+    height: 800px;
+    min-width: 500px;
+    position: relative;
+    background-color: transparent;
+  }
+
+  .signup-form {
+    padding-top: 40px;
+    width: 350px;
+    margin-block: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-inline: 10px;
+    border-radius: 20px;
+  }
+
+  .signup-heading {
+    text-align: center;
+  }
+
+  .form-input-container {
+    border-left: none;
+    border-bottom: 1px solid var(--white);
+  }
+  .signup-subContainer {
+    flex-direction: column-reverse;
+  }
+  .change-role {
+    padding-left: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .signup-container {
+    padding: 32px 0px;
+    height: fit-content;
+  }
+
+  .signup-heading {
+    font-size: 32px;
+  }
+
+  .change-role {
+    padding-bottom: 30px;
+  }
+
+  .form-input-container {
+    padding: 10px 10px;
+  }
+}

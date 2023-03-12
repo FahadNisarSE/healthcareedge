@@ -1,0 +1,124 @@
+.nav--container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    height: 70px;
+    width: 100vw;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    margin: 0px;
+    padding-inline: 1.5rem;
+    background-color: var(--white-2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menuIcon {
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    display: none;
+    border: 1px solid var(--main-gradient);
+}
+
+.menuIcon:hover,
+.menuIcon:focus {
+    background: linear-gradient(45deg, rgba(16, 222, 253, 1) 0%, rgba(71, 45, 253, 1) 72%);
+    color: var(--white);
+}
+
+.navbar--icon {
+    width: 60px;
+    height: 60px;
+}
+
+.nav--menu--list {
+    font-size: 0.8rem;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    gap: 1.5rem;
+}
+
+.menu--heading {
+    text-decoration: none;
+    min-width: fit-content;
+}
+
+.menu--heading>h3 {
+    height: 40px;
+    color: var(--lightest-navy);
+    padding-inline: 10px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.menu--heading:hover {
+    background: linear-gradient(45deg, rgba(16, 222, 253, 1) 0%, rgba(71, 45, 253, 1) 72%);
+    background-clip: text;
+    color: transparent;
+}
+
+.login-button-box {
+    padding: 1px;
+    border-radius: 8px;
+}
+
+.nav--login--button {
+    font-size: 18px;
+    padding-inline: 4px;
+    font-weight: 500;
+    width: 120px;
+    height: 50px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+}
+
+#current-link {
+    font-weight: 600;
+    background: linear-gradient(45deg, rgba(16, 222, 253, 1) 0%, rgba(71, 45, 253, 1) 72%);
+    border-radius: 30px;
+}
+
+#current-link > h3 {
+    color: var(--white);
+}
+
+@media (max-width: 820px) {
+    .menuIcon {
+        height: 35px;
+        width: 35px;
+        display: block;
+    }
+
+    .nav--menu--list {
+        display: none;
+    }
+
+    .navbar--icon {
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .nav--login--button {
+        display: none;
+    }
+
+    .menuIcon {
+        height: 30px;
+        width: 30px;
+    }
+
+    .navbar--icon {
+        margin-right: 0;
+    }
+}

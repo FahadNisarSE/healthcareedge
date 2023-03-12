@@ -1,0 +1,131 @@
+.profile-user-appointments {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: var(--white);
+    border: 1px solid var(--grey-2);
+    overflow-x: scroll;
+}
+
+.profile-user-appointments-heading {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    column-gap: 16px;
+}
+
+.table-heading {
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.profile-user-appointments-value-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-user-appointments-value {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    column-gap: 16px;
+    padding-block: 10px;
+}
+
+.info-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+    width: fit-content;
+}
+
+#profile-user-appointment-doctor {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#profile-user-appointment-doctor>img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.profile-user-appointment-doctor-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.profile-user-appointment-doctor-info>h6 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.profile-user-appointment-doctor-info>p {
+    color: var(--grey-1);
+    font-size: 14px;
+}
+
+.highlight-date {
+    display: flex;
+    color: var(--blue-2);
+}
+
+.appointment-date {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info-value {
+    font-size: 14px;
+    color: var(--grey-1);
+}
+
+.green {
+    color: var(--lightest-navy);
+    background-color: var(--green);
+}
+
+.red {
+    color: var(--red);
+    background-color: var(--red-1);
+}
+
+.yellow {
+    color: var(--grey-1);
+    background-color: var(--yellow);
+}
+
+.blue {
+    color: var(--white);
+    background-color: var(--blue-1);
+}
+
+.green, .red, .blue, .yellow {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    border-radius: 3px;
+    padding: 5px;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+@media (min-width: 800px) {
+    .table-heading {
+        min-width: 170px;
+    }
+
+    .info-column {
+        min-width: 170px;
+    }
+}
